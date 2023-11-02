@@ -323,5 +323,7 @@
 
 let random = Math.floor(Math.random() * jokesArray.length - 1) + 0
 console.log(random)
-let result = document.getElementsByClassName("jokes")[0] 
+let category = document.getElementById("category")
+category.innerHTML = jokesArray[random].category
+let result = document.getElementById("joke")
 result.innerHTML = jokesArray[random].joke
